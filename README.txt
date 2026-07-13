@@ -1,21 +1,21 @@
-DULCINEA · APP CATÁLOGO Y COTIZACIONES
+DULCINEA · SITIO WEB PROFESIONAL
 
-Contenido:
-- index.html: página principal
-- styles.css: diseño
-- app.js: catálogo, cotización, WhatsApp e historial local
-- manifest.webmanifest: instalación como PWA
-- service-worker.js: funcionamiento básico sin conexión
-- assets/logo-dulcinea.png: logo de la empresa
+CONTENIDO
+- index.html
+- styles.css
+- app.js
+- manifest.webmanifest
+- service-worker.js
+- assets/logo-dulcinea.png
+- assets/images/*.webp
 
-Cómo probar:
-1. Descomprima la carpeta.
-2. Para una vista rápida, abra index.html.
-3. Para instalarla como PWA y activar el modo sin conexión, súbala a un hosting HTTPS
-   como Netlify, Vercel, GitHub Pages o su propio servidor.
+PUBLICAR EN GITHUB
+1. Descomprima este ZIP.
+2. Entre al repositorio dulcinea-web.
+3. Elimine o reemplace los archivos anteriores.
+4. Suba TODO el contenido de esta carpeta, conservando la carpeta assets.
+5. Pulse Commit changes.
+6. Netlify actualizará automáticamente el sitio.
 
-Importante:
-- Esta versión envía solicitudes mediante WhatsApp.
-- Los pedidos guardados quedan solo en el dispositivo del cliente.
-- Para recibir pedidos en una base de datos y tener panel administrativo se requiere
-  conectar un backend (por ejemplo, Supabase, Firebase o un servidor propio).
+IMPORTANTE
+La carpeta assets debe conservarse exactamente con ese nombre.

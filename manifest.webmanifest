@@ -1,11 +1,11 @@
 {
-  "name": "Dulcinea Tipografía y Papelería",
+  "name": "Dulcinea Tipografía y Litografía",
   "short_name": "Dulcinea",
   "start_url": "./",
   "display": "standalone",
-  "background_color": "#f7f1e6",
-  "theme_color": "#b78383",
-  "description": "Catálogo digital, pedidos y cotizaciones de Dulcinea.",
+  "background_color": "#f6f0e7",
+  "theme_color": "#80575d",
+  "description": "Catálogo y cotizaciones de Dulcinea en Bogotá D.C.",
   "icons": [
     {
       "src": "assets/logo-dulcinea.png",

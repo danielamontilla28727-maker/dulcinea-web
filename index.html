@@ -2,249 +2,432 @@
 <html lang="es">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#b78383">
-  <title>Dulcinea · Tipografía y Papelería</title>
-  <meta name="description" content="Catálogo digital y cotizaciones de Dulcinea Tipografía y Papelería, desde 1982.">
-  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#8b5e63">
+  <meta name="description" content="Tipografía y Litografía Dulcinea en Bogotá D.C. Más de 40 años de experiencia en impresión, encuadernación, sellos, tarjetas, restauración y papelería personalizada.">
+  <meta property="og:title" content="Dulcinea · Tipografía y Litografía">
+  <meta property="og:description" content="Más de 40 años transformando ideas en impresiones que perduran.">
+  <meta property="og:image" content="assets/logo-dulcinea.png">
+  <title>Dulcinea · Tipografía y Litografía</title>
   <link rel="icon" href="assets/logo-dulcinea.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="topbar">
-    <a class="brand" href="#inicio">
-      <img src="assets/logo-dulcinea.png" alt="Logo Dulcinea">
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Ir al inicio">
+      <img src="assets/logo-dulcinea.png" alt="Dulcinea Tipografía y Papelería">
     </a>
-    <nav>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">☰</button>
+    <nav id="navMenu">
       <a href="#historia">Historia</a>
       <a href="#servicios">Servicios</a>
-      <a href="#cotizacion">Cotización</a>
+      <a href="#galeria">Galería</a>
+      <a href="#cotizar">Cotizar</a>
       <a href="#contacto">Contacto</a>
     </nav>
-    <button id="installBtn" class="ghost hidden">Instalar app</button>
   </header>
 
   <main>
     <section id="inicio" class="hero">
-      <div class="hero-copy">
-        <span class="eyebrow">Tradición gráfica desde 1982</span>
-        <h1>Sus ideas merecen convertirse en piezas que inspiren confianza.</h1>
-        <p>En Dulcinea diseñamos, imprimimos y elaboramos cada trabajo con atención personalizada, experiencia y cuidado por los detalles.</p>
+      <div class="hero-overlay"></div>
+      <img class="hero-bg" src="assets/images/restauracion-1.webp" alt="" aria-hidden="true">
+      <div class="hero-content reveal">
+        <span class="eyebrow">Bogotá D.C. · Desde 1982</span>
+        <h1>Más de 40 años transformando ideas en impresiones que perduran.</h1>
+        <p>Diseño, impresión y acabados con experiencia, precisión y atención personalizada por la Sra. Lucía.</p>
         <div class="hero-actions">
-          <a class="primary" href="#servicios">Ver portafolio</a>
-          <a class="secondary" href="#cotizacion">Solicitar cotización</a>
-        </div>
-        <div class="trust-row">
-          <span>Más de 40 años de experiencia</span>
-          <span>Atención personalizada</span>
-          <span>Calidad y cumplimiento</span>
+          <a class="btn btn-primary" href="#servicios">Explorar servicios</a>
+          <a class="btn btn-light" href="#cotizar">Cotizar ahora</a>
         </div>
       </div>
-      <div class="hero-card">
-        <img src="assets/logo-dulcinea.png" alt="Dulcinea Tipografía y Papelería">
-        <p>Diseñamos impresos que representan su historia, su empresa y sus momentos especiales.</p>
+      <div class="hero-trust">
+        <div><strong>1982</strong><span>Trayectoria</span></div>
+        <div><strong>+40 años</strong><span>Experiencia</span></div>
+        <div><strong>Personalizada</strong><span>Atención</span></div>
       </div>
     </section>
 
     <section id="historia" class="section history">
-      <div>
-        <span class="eyebrow">Nuestra trayectoria</span>
+      <div class="history-copy reveal">
+        <span class="eyebrow">Nuestra historia</span>
         <h2>Una tradición construida con tinta, papel y confianza.</h2>
-        <p>Desde 1982, Dulcinea acompaña a personas, familias, profesionales y empresas en la creación de productos gráficos hechos a la medida.</p>
+        <p>Desde 1982, DULCINEA acompaña a personas, familias, profesionales y empresas en la creación de productos gráficos elaborados con dedicación y cuidado por cada detalle.</p>
         <blockquote>“La tradición señala que esta prensa perteneció a Antonio Nariño (1765-1823) y que con ella se imprimirían textos del Papel Periódico de la ciudad de Santafé y Los Derechos del Hombre y del Ciudadano”.</blockquote>
       </div>
-      <div class="stat-panel">
-        <strong>1982</strong>
-        <span>El comienzo de una historia de servicio, diseño y oficio.</span>
+      <div class="history-image reveal">
+        <img src="assets/images/sellos-secos-1.webp" alt="Trabajo artesanal de sello seco">
+        <div class="floating-card">
+          <span>Desde</span>
+          <strong>1982</strong>
+          <p>Calidad, tradición y cumplimiento.</p>
+        </div>
       </div>
     </section>
 
-    <section id="servicios" class="section">
-      <div class="section-head">
+    <section class="promise">
+      <div class="section promise-inner reveal">
+        <span class="eyebrow">La promesa Dulcinea</span>
+        <h2>Cada proyecto merece sentirse único.</h2>
+        <div class="promise-grid">
+          <article><strong>01</strong><h3>Escuchamos</h3><p>Comprendemos la idea, el uso y el resultado que desea obtener.</p></article>
+          <article><strong>02</strong><h3>Diseñamos</h3><p>Organizamos cada detalle para comunicar con claridad y elegancia.</p></article>
+          <article><strong>03</strong><h3>Elaboramos</h3><p>Trabajamos con experiencia, precisión y acabados profesionales.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="servicios" class="section services">
+      <div class="section-heading reveal">
         <div>
           <span class="eyebrow">Portafolio</span>
-          <h2>Servicios para cada idea y cada ocasión.</h2>
+          <h2>Soluciones gráficas para cada necesidad.</h2>
         </div>
-        <input id="search" type="search" placeholder="Buscar un servicio…">
+        <input id="serviceSearch" type="search" placeholder="Buscar un servicio…" aria-label="Buscar servicio">
       </div>
-      <div id="serviceGrid" class="service-grid">
-        <article class="service-card" data-name="empastes">
-      <div class="service-icon">01</div>
-      <h3>Empastes</h3>
-      <p>Acabados resistentes y elegantes para documentos, tesis, libros y archivos.</p>
-      <button class="add-btn" data-service="Empastes">Agregar a cotización</button>
+      <div class="service-grid">
+        
+    <article class="service-card reveal" data-service="empastes">
+      <button class="service-image" data-lightbox="assets/images/encuadernacion-1.webp" aria-label="Ampliar imagen de Empastes">
+        <img src="assets/images/encuadernacion-1.webp" alt="Empastes" loading="lazy">
+      </button>
+      <div class="service-content">
+        <span class="service-number">01</span>
+        <h3>Empastes</h3>
+        <p>Protección y presentación profesional para documentos, tesis, libros y archivos.</p>
+        <button class="quote-service" data-service="Empastes">Agregar a cotización</button>
+      </div>
     </article>
-<article class="service-card" data-name="tarjetas">
-      <div class="service-icon">02</div>
-      <h3>Tarjetas</h3>
-      <p>Diseños personalizados para celebraciones, eventos y comunicaciones especiales.</p>
-      <button class="add-btn" data-service="Tarjetas">Agregar a cotización</button>
+
+    <article class="service-card reveal" data-service="tarjetas">
+      <button class="service-image" data-lightbox="assets/images/tarjetas-boda.webp" aria-label="Ampliar imagen de Tarjetas">
+        <img src="assets/images/tarjetas-boda.webp" alt="Tarjetas" loading="lazy">
+      </button>
+      <div class="service-content">
+        <span class="service-number">02</span>
+        <h3>Tarjetas</h3>
+        <p>Piezas personalizadas para celebraciones, empresas y momentos especiales.</p>
+        <button class="quote-service" data-service="Tarjetas">Agregar a cotización</button>
+      </div>
     </article>
-<article class="service-card" data-name="tarjetas de presentación">
-      <div class="service-icon">03</div>
-      <h3>Tarjetas de presentación</h3>
-      <p>Presentación profesional con acabados sobrios, modernos y memorables.</p>
-      <button class="add-btn" data-service="Tarjetas de presentación">Agregar a cotización</button>
+
+    <article class="service-card reveal" data-service="tarjetas de presentación">
+      <button class="service-image" data-lightbox="assets/images/tarjetas-presentacion.webp" aria-label="Ampliar imagen de Tarjetas de presentación">
+        <img src="assets/images/tarjetas-presentacion.webp" alt="Tarjetas de presentación" loading="lazy">
+      </button>
+      <div class="service-content">
+        <span class="service-number">03</span>
+        <h3>Tarjetas de presentación</h3>
+        <p>Diseños que proyectan identidad, confianza y recordación.</p>
+        <button class="quote-service" data-service="Tarjetas de presentación">Agregar a cotización</button>
+      </div>
     </article>
-<article class="service-card" data-name="brillo uv y mate">
-      <div class="service-icon">04</div>
-      <h3>Brillo UV y Mate</h3>
-      <p>Contrastes premium que resaltan logotipos, nombres y elementos importantes.</p>
-      <button class="add-btn" data-service="Brillo UV y Mate">Agregar a cotización</button>
+
+    <article class="service-card reveal" data-service="brillo uv y acabado mate">
+      <button class="service-image" data-lightbox="assets/images/tarjetas-uv-1.webp" aria-label="Ampliar imagen de Brillo UV y acabado mate">
+        <img src="assets/images/tarjetas-uv-1.webp" alt="Brillo UV y acabado mate" loading="lazy">
+      </button>
+      <div class="service-content">
+        <span class="service-number">04</span>
+        <h3>Brillo UV y acabado mate</h3>
+        <p>Contrastes premium que resaltan logotipos, detalles y mensajes.</p>
+        <button class="quote-service" data-service="Brillo UV y acabado mate">Agregar a cotización</button>
+      </div>
     </article>
-<article class="service-card" data-name="tarjetas de boda">
-      <div class="service-icon">05</div>
-      <h3>Tarjetas de boda</h3>
-      <p>Papelería delicada y personalizada para celebrar historias inolvidables.</p>
-      <button class="add-btn" data-service="Tarjetas de boda">Agregar a cotización</button>
+
+    <article class="service-card reveal" data-service="tarjetas de boda">
+      <button class="service-image" data-lightbox="assets/images/tarjetas-boda.webp" aria-label="Ampliar imagen de Tarjetas de boda">
+        <img src="assets/images/tarjetas-boda.webp" alt="Tarjetas de boda" loading="lazy">
+      </button>
+      <div class="service-content">
+        <span class="service-number">05</span>
+        <h3>Tarjetas de boda</h3>
+        <p>Papelería elegante y delicada para una celebración inolvidable.</p>
+        <button class="quote-service" data-service="Tarjetas de boda">Agregar a cotización</button>
+      </div>
     </article>
-<article class="service-card" data-name="tarjetas de 15 años">
-      <div class="service-icon">06</div>
-      <h3>Tarjetas de 15 años</h3>
-      <p>Invitaciones elegantes que reflejan la personalidad de cada quinceañera.</p>
-      <button class="add-btn" data-service="Tarjetas de 15 años">Agregar a cotización</button>
+
+    <article class="service-card reveal" data-service="tarjetas de 15 años">
+      <button class="service-image" data-lightbox="assets/images/tarjetas-15.webp" aria-label="Ampliar imagen de Tarjetas de 15 años">
+        <img src="assets/images/tarjetas-15.webp" alt="Tarjetas de 15 años" loading="lazy">
+      </button>
+      <div class="service-content">
+        <span class="service-number">06</span>
+        <h3>Tarjetas de 15 años</h3>
+        <p>Invitaciones que reflejan estilo, personalidad y emoción.</p>
+        <button class="quote-service" data-service="Tarjetas de 15 años">Agregar a cotización</button>
+      </div>
     </article>
-<article class="service-card" data-name="baby shower">
-      <div class="service-icon">07</div>
-      <h3>Baby Shower</h3>
-      <p>Diseños tiernos, creativos y personalizados para dar la bienvenida al bebé.</p>
-      <button class="add-btn" data-service="Baby Shower">Agregar a cotización</button>
+
+    <article class="service-card reveal" data-service="tarjetas de baby shower">
+      <button class="service-image" data-lightbox="assets/images/tarjetas-baby.webp" aria-label="Ampliar imagen de Tarjetas de baby shower">
+        <img src="assets/images/tarjetas-baby.webp" alt="Tarjetas de baby shower" loading="lazy">
+      </button>
+      <div class="service-content">
+        <span class="service-number">07</span>
+        <h3>Tarjetas de baby shower</h3>
+        <p>Diseños tiernos y personalizados para dar la bienvenida al bebé.</p>
+        <button class="quote-service" data-service="Tarjetas de baby shower">Agregar a cotización</button>
+      </div>
     </article>
-<article class="service-card" data-name="sellos de madera">
-      <div class="service-icon">08</div>
-      <h3>Sellos de madera</h3>
-      <p>Soluciones tradicionales, durables y adaptadas a distintos usos.</p>
-      <button class="add-btn" data-service="Sellos de madera">Agregar a cotización</button>
+
+    <article class="service-card reveal" data-service="sellos de madera">
+      <button class="service-image" data-lightbox="assets/images/sellos-madera-1.webp" aria-label="Ampliar imagen de Sellos de madera">
+        <img src="assets/images/sellos-madera-1.webp" alt="Sellos de madera" loading="lazy">
+      </button>
+      <div class="service-content">
+        <span class="service-number">08</span>
+        <h3>Sellos de madera</h3>
+        <p>Una solución tradicional, resistente y completamente personalizada.</p>
+        <button class="quote-service" data-service="Sellos de madera">Agregar a cotización</button>
+      </div>
     </article>
-<article class="service-card" data-name="sellos secos">
-      <div class="service-icon">09</div>
-      <h3>Sellos secos</h3>
-      <p>Relieve elegante para documentos, diplomas, sobres y papelería institucional.</p>
-      <button class="add-btn" data-service="Sellos secos">Agregar a cotización</button>
+
+    <article class="service-card reveal" data-service="sellos secos">
+      <button class="service-image" data-lightbox="assets/images/sellos-secos-1.webp" aria-label="Ampliar imagen de Sellos secos">
+        <img src="assets/images/sellos-secos-1.webp" alt="Sellos secos" loading="lazy">
+      </button>
+      <div class="service-content">
+        <span class="service-number">09</span>
+        <h3>Sellos secos</h3>
+        <p>Relieve sin tinta para certificados, sobres, diplomas y papelería premium.</p>
+        <button class="quote-service" data-service="Sellos secos">Agregar a cotización</button>
+      </div>
     </article>
-<article class="service-card" data-name="sellos automáticos">
-      <div class="service-icon">10</div>
-      <h3>Sellos automáticos</h3>
-      <p>Marcación práctica, limpia y rápida para oficinas y negocios.</p>
-      <button class="add-btn" data-service="Sellos automáticos">Agregar a cotización</button>
+
+    <article class="service-card reveal" data-service="sellos automáticos">
+      <button class="service-image" data-lightbox="assets/images/sellos-automaticos-1.webp" aria-label="Ampliar imagen de Sellos automáticos">
+        <img src="assets/images/sellos-automaticos-1.webp" alt="Sellos automáticos" loading="lazy">
+      </button>
+      <div class="service-content">
+        <span class="service-number">10</span>
+        <h3>Sellos automáticos</h3>
+        <p>Impresiones rápidas, limpias y precisas para uso diario.</p>
+        <button class="quote-service" data-service="Sellos automáticos">Agregar a cotización</button>
+      </div>
     </article>
-<article class="service-card" data-name="plegables">
-      <div class="service-icon">11</div>
-      <h3>Plegables</h3>
-      <p>Información clara en formatos atractivos para empresas, eventos y campañas.</p>
-      <button class="add-btn" data-service="Plegables">Agregar a cotización</button>
+
+    <article class="service-card reveal" data-service="plegables">
+      <button class="service-image" data-lightbox="assets/images/plegables-1.webp" aria-label="Ampliar imagen de Plegables">
+        <img src="assets/images/plegables-1.webp" alt="Plegables" loading="lazy">
+      </button>
+      <div class="service-content">
+        <span class="service-number">11</span>
+        <h3>Plegables</h3>
+        <p>Información organizada en formatos atractivos para campañas y empresas.</p>
+        <button class="quote-service" data-service="Plegables">Agregar a cotización</button>
+      </div>
     </article>
-<article class="service-card" data-name="plotters">
-      <div class="service-icon">12</div>
-      <h3>Plotters</h3>
-      <p>Impresión de gran formato para planos, afiches, avisos y material promocional.</p>
-      <button class="add-btn" data-service="Plotters">Agregar a cotización</button>
+
+    <article class="service-card reveal" data-service="plotter">
+      <button class="service-image" data-lightbox="assets/images/plotter.webp" aria-label="Ampliar imagen de Plotter">
+        <img src="assets/images/plotter.webp" alt="Plotter" loading="lazy">
+      </button>
+      <div class="service-content">
+        <span class="service-number">12</span>
+        <h3>Plotter</h3>
+        <p>Impresión de gran formato para planos, avisos, afiches y material promocional.</p>
+        <button class="quote-service" data-service="Plotter">Agregar a cotización</button>
+      </div>
     </article>
-<article class="service-card" data-name="encuadernaciones">
-      <div class="service-icon">13</div>
-      <h3>Encuadernaciones</h3>
-      <p>Unimos y protegemos documentos con acabados funcionales y profesionales.</p>
-      <button class="add-btn" data-service="Encuadernaciones">Agregar a cotización</button>
+
+    <article class="service-card reveal" data-service="encuadernaciones">
+      <button class="service-image" data-lightbox="assets/images/encuadernacion-2.webp" aria-label="Ampliar imagen de Encuadernaciones">
+        <img src="assets/images/encuadernacion-2.webp" alt="Encuadernaciones" loading="lazy">
+      </button>
+      <div class="service-content">
+        <span class="service-number">13</span>
+        <h3>Encuadernaciones</h3>
+        <p>Anillados y acabados funcionales para documentos de uso frecuente.</p>
+        <button class="quote-service" data-service="Encuadernaciones">Agregar a cotización</button>
+      </div>
     </article>
-<article class="service-card" data-name="restauración de libros">
-      <div class="service-icon">14</div>
-      <h3>Restauración de libros</h3>
-      <p>Recuperamos piezas valiosas respetando su estructura y valor sentimental.</p>
-      <button class="add-btn" data-service="Restauración de libros">Agregar a cotización</button>
+
+    <article class="service-card reveal" data-service="restauración de libros">
+      <button class="service-image" data-lightbox="assets/images/restauracion-1.webp" aria-label="Ampliar imagen de Restauración de libros">
+        <img src="assets/images/restauracion-1.webp" alt="Restauración de libros" loading="lazy">
+      </button>
+      <div class="service-content">
+        <span class="service-number">14</span>
+        <h3>Restauración de libros</h3>
+        <p>Recuperación cuidadosa de piezas con valor histórico, funcional o sentimental.</p>
+        <button class="quote-service" data-service="Restauración de libros">Agregar a cotización</button>
+      </div>
     </article>
-<article class="service-card" data-name="recetarios">
-      <div class="service-icon">15</div>
-      <h3>Recetarios</h3>
-      <p>Formatos personalizados, numerados y organizados para profesionales y empresas.</p>
-      <button class="add-btn" data-service="Recetarios">Agregar a cotización</button>
+
+    <article class="service-card reveal" data-service="recetarios">
+      <button class="service-image" data-lightbox="assets/images/recetarios-1.webp" aria-label="Ampliar imagen de Recetarios">
+        <img src="assets/images/recetarios-1.webp" alt="Recetarios" loading="lazy">
+      </button>
+      <div class="service-content">
+        <span class="service-number">15</span>
+        <h3>Recetarios</h3>
+        <p>Formatos personalizados y organizados para profesionales e instituciones.</p>
+        <button class="quote-service" data-service="Recetarios">Agregar a cotización</button>
+      </div>
     </article>
-<article class="service-card" data-name="volantes">
-      <div class="service-icon">16</div>
-      <h3>Volantes</h3>
-      <p>Comunicación directa y llamativa para promociones, lanzamientos y campañas.</p>
-      <button class="add-btn" data-service="Volantes">Agregar a cotización</button>
+
+    <article class="service-card reveal" data-service="volantes">
+      <button class="service-image" data-lightbox="assets/images/volantes-1.webp" aria-label="Ampliar imagen de Volantes">
+        <img src="assets/images/volantes-1.webp" alt="Volantes" loading="lazy">
+      </button>
+      <div class="service-content">
+        <span class="service-number">16</span>
+        <h3>Volantes</h3>
+        <p>Comunicación directa y llamativa para promociones, servicios y eventos.</p>
+        <button class="quote-service" data-service="Volantes">Agregar a cotización</button>
+      </div>
     </article>
-<article class="service-card" data-name="factureros">
-      <div class="service-icon">17</div>
-      <h3>Factureros</h3>
-      <p>Talonarios y formatos personalizados para apoyar la operación de su negocio.</p>
-      <button class="add-btn" data-service="Factureros">Agregar a cotización</button>
+
+    <article class="service-card reveal" data-service="factureros y talonarios">
+      <button class="service-image" data-lightbox="assets/images/factureros-1.webp" aria-label="Ampliar imagen de Factureros y talonarios">
+        <img src="assets/images/factureros-1.webp" alt="Factureros y talonarios" loading="lazy">
+      </button>
+      <div class="service-content">
+        <span class="service-number">17</span>
+        <h3>Factureros y talonarios</h3>
+        <p>Formatos numerados y personalizados para apoyar la operación de su negocio.</p>
+        <button class="quote-service" data-service="Factureros y talonarios">Agregar a cotización</button>
+      </div>
     </article>
-<article class="service-card" data-name="plastificación">
-      <div class="service-icon">18</div>
-      <h3>Plastificación</h3>
-      <p>Protección duradera contra humedad, desgaste y manipulación frecuente.</p>
-      <button class="add-btn" data-service="Plastificación">Agregar a cotización</button>
+
+    <article class="service-card reveal" data-service="plastificación">
+      <button class="service-image" data-lightbox="assets/images/minutas-1.webp" aria-label="Ampliar imagen de Plastificación">
+        <img src="assets/images/minutas-1.webp" alt="Plastificación" loading="lazy">
+      </button>
+      <div class="service-content">
+        <span class="service-number">18</span>
+        <h3>Plastificación</h3>
+        <p>Protección duradera contra humedad, desgaste y manipulación constante.</p>
+        <button class="quote-service" data-service="Plastificación">Agregar a cotización</button>
+      </div>
     </article>
-<article class="service-card" data-name="libros de minuta">
-      <div class="service-icon">19</div>
-      <h3>Libros de minuta</h3>
-      <p>Libros resistentes y personalizados para registros administrativos e institucionales.</p>
-      <button class="add-btn" data-service="Libros de minuta">Agregar a cotización</button>
+
+    <article class="service-card reveal" data-service="libros de minuta">
+      <button class="service-image" data-lightbox="assets/images/minutas-2.webp" aria-label="Ampliar imagen de Libros de minuta">
+        <img src="assets/images/minutas-2.webp" alt="Libros de minuta" loading="lazy">
+      </button>
+      <div class="service-content">
+        <span class="service-number">19</span>
+        <h3>Libros de minuta</h3>
+        <p>Libros resistentes y personalizados para registros administrativos.</p>
+        <button class="quote-service" data-service="Libros de minuta">Agregar a cotización</button>
+      </div>
     </article>
       </div>
     </section>
 
-    <section id="cotizacion" class="section quote-section">
-      <div class="quote-copy">
-        <span class="eyebrow">Cotización</span>
-        <h2>Cuéntenos qué necesita.</h2>
-        <p>Seleccione servicios y complete los datos. La solicitud se abrirá en WhatsApp lista para enviar.</p>
-        <div id="selectedServices" class="selected-services"><span class="muted">Aún no ha agregado servicios.</span></div>
+    <section id="galeria" class="gallery-section">
+      <div class="section">
+        <div class="section-heading reveal">
+          <div>
+            <span class="eyebrow">Nuestros trabajos</span>
+            <h2>Detalles que hablan por sí solos.</h2>
+          </div>
+          <p>Una selección de productos y acabados disponibles.</p>
+        </div>
+        <div class="gallery-grid">
+          <button class="gallery-item reveal" data-lightbox="assets/images/sellos-secos-2.webp" aria-label="Ver Sellos secos">
+      <img src="assets/images/sellos-secos-2.webp" alt="Sellos secos" loading="lazy">
+      <span>Sellos secos</span>
+    </button>
+<button class="gallery-item reveal" data-lightbox="assets/images/sellos-automaticos-2.webp" aria-label="Ver Sellos automáticos">
+      <img src="assets/images/sellos-automaticos-2.webp" alt="Sellos automáticos" loading="lazy">
+      <span>Sellos automáticos</span>
+    </button>
+<button class="gallery-item reveal" data-lightbox="assets/images/restauracion-2.webp" aria-label="Ver Restauración de libros">
+      <img src="assets/images/restauracion-2.webp" alt="Restauración de libros" loading="lazy">
+      <span>Restauración de libros</span>
+    </button>
+<button class="gallery-item reveal" data-lightbox="assets/images/encuadernacion-1.webp" aria-label="Ver Encuadernación">
+      <img src="assets/images/encuadernacion-1.webp" alt="Encuadernación" loading="lazy">
+      <span>Encuadernación</span>
+    </button>
+<button class="gallery-item reveal" data-lightbox="assets/images/tarjetas-uv-2.webp" aria-label="Ver Brillo UV">
+      <img src="assets/images/tarjetas-uv-2.webp" alt="Brillo UV" loading="lazy">
+      <span>Brillo UV</span>
+    </button>
+<button class="gallery-item reveal" data-lightbox="assets/images/tarjetas-mate-2.webp" aria-label="Ver Acabado mate">
+      <img src="assets/images/tarjetas-mate-2.webp" alt="Acabado mate" loading="lazy">
+      <span>Acabado mate</span>
+    </button>
+<button class="gallery-item reveal" data-lightbox="assets/images/factureros-2.webp" aria-label="Ver Factureros">
+      <img src="assets/images/factureros-2.webp" alt="Factureros" loading="lazy">
+      <span>Factureros</span>
+    </button>
+<button class="gallery-item reveal" data-lightbox="assets/images/talonarios-1.webp" aria-label="Ver Talonarios">
+      <img src="assets/images/talonarios-1.webp" alt="Talonarios" loading="lazy">
+      <span>Talonarios</span>
+    </button>
+<button class="gallery-item reveal" data-lightbox="assets/images/plegables-2.webp" aria-label="Ver Plegables">
+      <img src="assets/images/plegables-2.webp" alt="Plegables" loading="lazy">
+      <span>Plegables</span>
+    </button>
+<button class="gallery-item reveal" data-lightbox="assets/images/sellos-madera-2.webp" aria-label="Ver Sellos de madera">
+      <img src="assets/images/sellos-madera-2.webp" alt="Sellos de madera" loading="lazy">
+      <span>Sellos de madera</span>
+    </button>
+<button class="gallery-item reveal" data-lightbox="assets/images/volantes-4.webp" aria-label="Ver Volantes">
+      <img src="assets/images/volantes-4.webp" alt="Volantes" loading="lazy">
+      <span>Volantes</span>
+    </button>
+<button class="gallery-item reveal" data-lightbox="assets/images/recetarios-2.webp" aria-label="Ver Recetarios">
+      <img src="assets/images/recetarios-2.webp" alt="Recetarios" loading="lazy">
+      <span>Recetarios</span>
+    </button>
+        </div>
       </div>
+    </section>
 
-      <form id="quoteForm" class="quote-form">
-        <label>Nombre completo
-          <input id="name" required placeholder="Ej. Andrea Gómez">
-        </label>
-        <label>Teléfono
-          <input id="phone" required inputmode="tel" placeholder="Ej. 300 000 0000">
-        </label>
-        <label>Correo electrónico
-          <input id="email" type="email" placeholder="correo@ejemplo.com">
-        </label>
-        <label>Cantidad aproximada
-          <input id="quantity" inputmode="numeric" placeholder="Ej. 100 unidades">
-        </label>
-        <label>Fecha requerida
-          <input id="date" type="date">
-        </label>
-        <label>Detalles del trabajo
-          <textarea id="details" rows="5" placeholder="Tamaño, colores, material, acabados o cualquier información adicional."></textarea>
-        </label>
-        <button type="submit" class="primary full">Enviar solicitud por WhatsApp</button>
-        <button type="button" id="saveOrder" class="secondary full">Guardar pedido en este dispositivo</button>
+    <section id="cotizar" class="section quote-section">
+      <div class="quote-intro reveal">
+        <span class="eyebrow">Cotización personalizada</span>
+        <h2>Cuéntenos qué necesita.</h2>
+        <p>Seleccione uno o varios servicios y envíe los datos directamente por WhatsApp. La Sra. Lucía responderá personalmente.</p>
+        <div id="selectedServices" class="selected-services">
+          <span class="empty-selection">Aún no ha agregado servicios.</span>
+        </div>
+      </div>
+      <form id="quoteForm" class="quote-form reveal">
+        <label>Nombre completo<input id="customerName" required placeholder="Ej. Andrea Gómez"></label>
+        <label>Teléfono<input id="customerPhone" required inputmode="tel" placeholder="Ej. 300 000 0000"></label>
+        <label>Correo electrónico<input id="customerEmail" type="email" placeholder="correo@ejemplo.com"></label>
+        <label>Cantidad aproximada<input id="quantity" placeholder="Ej. 100 unidades"></label>
+        <label>Fecha requerida<input id="requiredDate" type="date"></label>
+        <label class="wide">Detalles del trabajo<textarea id="details" rows="5" placeholder="Tamaño, colores, material, acabado o información adicional."></textarea></label>
+        <button class="btn btn-primary wide" type="submit">Enviar cotización por WhatsApp</button>
       </form>
     </section>
 
-    <section class="section saved-section">
-      <div class="section-head">
-        <div>
-          <span class="eyebrow">Pedidos guardados</span>
-          <h2>Historial local</h2>
+    <section id="contacto" class="contact-section">
+      <div class="section contact-grid">
+        <div class="reveal">
+          <span class="eyebrow light">Contacto</span>
+          <h2>Hagamos realidad su próximo proyecto.</h2>
+          <p>Atención personalizada en Bogotá D.C. por medio de WhatsApp y celular.</p>
         </div>
-        <button id="clearOrders" class="ghost">Borrar historial</button>
-      </div>
-      <div id="savedOrders" class="orders-list"></div>
-    </section>
-
-    <section id="contacto" class="section contact">
-      <div>
-        <span class="eyebrow">Contacto</span>
-        <h2>Hagamos realidad su próximo proyecto.</h2>
-        <p><strong>Sra. Lucía Parra</strong></p>
-      </div>
-      <div class="contact-links">
-        <a href="https://wa.me/573142594217" target="_blank" rel="noreferrer">WhatsApp: 314 259 4217</a>
-        <a href="mailto:Lupapri@hotmail.com">Lupapri@hotmail.com</a>
-        <a href="mailto:Tipografiadulcinea@hotmail.com">Tipografiadulcinea@hotmail.com</a>
+        <div class="contact-cards reveal">
+          <a href="https://wa.me/573142594217" target="_blank" rel="noopener"><span>WhatsApp y celular</span><strong>314 259 4217</strong></a>
+          <div><span>Atiende</span><strong>Sra. Lucía</strong></div>
+          <div><span>Lunes a viernes</span><strong>8:00 a. m. – 6:00 p. m.</strong></div>
+          <div><span>Sábados</span><strong>8:00 a. m. – 12:00 m.</strong></div>
+          <a href="mailto:Lupapri@hotmail.com"><span>Correo</span><strong>Lupapri@hotmail.com</strong></a>
+          <a href="mailto:Tipografiadulcinea@hotmail.com"><span>Correo alterno</span><strong>Tipografiadulcinea@hotmail.com</strong></a>
+        </div>
       </div>
     </section>
   </main>
 
+  <a class="whatsapp-float" href="https://wa.me/573142594217?text=Hola%2C%20deseo%20cotizar%20un%20trabajo%20con%20Dulcinea." target="_blank" rel="noopener" aria-label="Cotizar por WhatsApp">WhatsApp</a>
+
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <button id="closeLightbox" aria-label="Cerrar imagen">×</button>
+    <img id="lightboxImage" alt="">
+  </div>
+
   <footer>
-    <img src="assets/logo-dulcinea.png" alt="">
-    <p>© Dulcinea Tipografía y Papelería · Desde 1982</p>
+    <img src="assets/logo-dulcinea.png" alt="Dulcinea">
+    <p>© 2026 Dulcinea Tipografía y Litografía · Bogotá D.C.</p>
   </footer>
 
   <script src="app.js"></script>
