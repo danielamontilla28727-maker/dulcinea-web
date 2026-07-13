@@ -127,3 +127,69 @@ footer p{font-family:Arial,sans-serif;color:var(--muted);font-size:.82rem}
   .quote-form{grid-template-columns:1fr}.wide{grid-column:auto}
   footer{flex-direction:column}
 }
+
+
+/* Sección histórica destacada */
+.history{
+  display:block;
+}
+.history-copy{
+  max-width:900px;
+  margin-bottom:42px;
+}
+.tradition-feature{
+  display:grid;
+  grid-template-columns:1.05fr .95fr;
+  gap:38px;
+  align-items:stretch;
+  background:var(--white);
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  padding:22px;
+  box-shadow:var(--shadow);
+}
+.tradition-image-wrap{
+  min-height:620px;
+  border-radius:22px;
+  overflow:hidden;
+  background:#d8cec0;
+}
+.tradition-image-wrap img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+.tradition-text{
+  padding:24px 20px 24px 8px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+.tradition-text h3{
+  font-size:clamp(2rem,4vw,3.5rem);
+  line-height:1.04;
+  font-weight:500;
+  margin:12px 0 18px;
+}
+.tradition-text blockquote{
+  margin:0 0 22px;
+}
+.tradition-text p{
+  color:var(--muted);
+  line-height:1.72;
+  font-size:1.04rem;
+}
+.tradition-signature{
+  color:var(--rose-deep)!important;
+  font-weight:700;
+  font-style:italic;
+}
+@media(max-width:1000px){
+  .tradition-feature{grid-template-columns:1fr}
+  .tradition-image-wrap{min-height:520px}
+  .tradition-text{padding:16px 8px 12px}
+}
+@media(max-width:720px){
+  .tradition-feature{padding:12px;gap:18px}
+  .tradition-image-wrap{min-height:390px}
+}

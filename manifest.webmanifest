@@ -8,7 +8,7 @@
   "description": "Catálogo y cotizaciones de Dulcinea en Bogotá D.C.",
   "icons": [
     {
-      "src": "assets/logo-dulcinea.png",
+      "src": "logo-dulcinea.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any"
