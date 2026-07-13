@@ -1,0 +1,17 @@
+{
+  "name": "Dulcinea Tipografía y Papelería",
+  "short_name": "Dulcinea",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f7f1e6",
+  "theme_color": "#b78383",
+  "description": "Catálogo digital, pedidos y cotizaciones de Dulcinea.",
+  "icons": [
+    {
+      "src": "assets/logo-dulcinea.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
